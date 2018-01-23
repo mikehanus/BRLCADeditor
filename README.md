@@ -19,7 +19,7 @@ This program is licensed under BSD-3-Clause license.
 ## Installation:
 1. Install BRL-CAD: [download install file](https://sourceforge.net/projects/brlcad/files/) or [compile from source](http://brlcad.org/wiki/SVN)
 2. Install Qt5 (https://www.qt.io/download) or use `apt` in debian-based OS.
-3. `git clone ?` or download it as a zip and unpack it
+3. `git clone https://github.com/mikehanus/BRLCADeditor.git` or download it as a zip and unpack it
 4. `cd BRLCADeditor`
 5. Open `main.cpp`, find line 10 and replace "/usr/brlcad/bin/" with your BRL-CAD bin path (there are programs like g-step, rt, dxf-g, etc... in it)
 6. `qmake`
