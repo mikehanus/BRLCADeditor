@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogExportSTL</class>
+ <widget class="QDialog" name="DialogExportSTL">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>227</width>
+    <height>265</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>221</y>
+     <width>161</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="binary">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>61</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Binary</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="cubes">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>191</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Marching cubes algorithm</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="verbose">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>0</y>
+     <width>89</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Verbose</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="inches">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>0</y>
+     <width>61</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Inches</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="tolerance">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>181</y>
+     <width>211</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>6</number>
+   </property>
+   <property name="maximum">
+    <double>1000000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>0.005000000000000</double>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="toleranceType">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>141</y>
+     <width>131</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Absolute</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Normal</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Relative</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Calculational</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>140</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>tolerance:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="rt">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>211</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string extracomment="RT debug mask"/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nmq">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>211</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string extracomment="NMG debug flag"/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogExportSTL</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>252</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>264</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogExportSTL</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>252</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>226</x>
+     <y>264</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
