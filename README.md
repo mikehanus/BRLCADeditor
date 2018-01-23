@@ -2,11 +2,11 @@
 
 This program was made for BRL-CAD community (www.brlcad.org) as a part of Google Code-In 2017 contest. 
 
-The idea behind it was to enhance BRL-CAD program interface with simple script-editing features in C++ and ASCII formats, similarly to OpenSCAD (http://www.openscad.org/) style of editing. 
+The idea behind it was to enhance BRL-CAD program interface with simple script-editing features in C++ and ASCII formats, similarly to [OpenSCAD](http://www.openscad.org/) style of editing. 
 DXF and STL import/export functions were included to this editor as well for convenience.
 
 ## Video summary of the program features  
-See (https://youtube.com/)
+See https://www.youtube.com/watch?v=aJfeYaiLtWk
 
 ## Warning
 This project is still in its early development phase and probably pretty buggy, so if you are looking for something stable and working, this would not be a good choise for you :-)
